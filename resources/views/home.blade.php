@@ -18,7 +18,7 @@
 <body>
     <main>
         <div class="container">
-            <h1 class="text-center py-4">Departing Trains</h1>
+            <h1 class="text-center my-5">Departing Trains</h1>
                 
             <table class="table table-light table-striped table-hover">
                 <thead>
