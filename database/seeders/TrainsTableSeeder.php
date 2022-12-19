@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 // use App\Models\Train; ->MODEL se volessi importare i dati da un db interno
+use App\Models\Train;
 use Faker\Generator as Faker;
 
 class TrainsTableSeeder extends Seeder
@@ -45,6 +46,8 @@ class TrainsTableSeeder extends Seeder
             $newtrain->carriages_number = $faker->randomDigit();
             $newtrain->on_time = $faker->boolean();
             $newtrain->cancelled = $faker->boolean();
+
+            $newtrain->save();
         }
     }
 }
