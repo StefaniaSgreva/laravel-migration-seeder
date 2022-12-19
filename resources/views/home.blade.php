@@ -46,8 +46,8 @@
                     <td>{{$train->arrival_time}}</td>
                     <td>{{$train->train_code}}</td>
                     <td>{{$train->carriages_number}}</td>
-                    <td>{{$train->on_time}}</td>
-                    <td>{{$train->cancelled}}</td>
+                    <td>{{$train->on_time ? 'yes' : 'no'}}</td>
+                    <td>{{$train->cancelled ? 'cancelled' : ''}}</td>
                   </tr>
                   @endforeach
                 </tbody>
