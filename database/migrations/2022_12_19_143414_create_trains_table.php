@@ -20,9 +20,9 @@ return new class extends Migration {
             $table->time('departure_time');
             $table->time('arrival_time');
             $table->string('train_code', 8);
-            $table->integer('carriages_number')->nullable();
-            $table->boolean('on_time')->nullable();
-            $table->boolean('cancelled')->nullable();
+            $table->integer('carriages_number')->nullable()->default(null);
+            $table->boolean('on_time')->nullable()->default(null);
+            $table->boolean('cancelled')->nullable()->default(null);
             $table->timestamps();
         });
     }
